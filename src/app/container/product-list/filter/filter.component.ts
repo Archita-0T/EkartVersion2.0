@@ -10,4 +10,6 @@ export class FilterComponent {
 @Input() inStock:number=0;
 @Input() outOfStock:number=0;
 
+selectedFilterRadioButton:string='all';
+
 }
