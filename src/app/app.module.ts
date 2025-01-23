@@ -11,10 +11,12 @@ import { ContainerComponent } from './container/container.component';
 import { SearchComponent } from './container/search/search.component';
 import { ProductListComponent } from './container/product-list/product-list.component';
 import { FormsModule } from '@angular/forms';
+import { ProductComponent } from './container/product-list/product/product.component';
+import { FilterComponent } from './container/product-list/filter/filter.component';
 
 @NgModule({
   declarations: [
-    AppComponent, HeaderComponent, TopHeaderComponent, MainMenuComponent, TopMenuComponent, ContainerComponent, SearchComponent, ProductListComponent
+    AppComponent, HeaderComponent, TopHeaderComponent, MainMenuComponent, TopMenuComponent, ContainerComponent, SearchComponent, ProductListComponent, ProductComponent, FilterComponent
   ],
   imports: [
     BrowserModule,
