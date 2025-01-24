@@ -1,5 +1,5 @@
 <div class="ekart--search--product">
-    <input class="ekart-search-product-input" placeholder="Search Products"  [(ngModel)]="searchText" >
+    <input class="ekart-search-product-input" placeholder="Search Products"  [(ngModel)]="searchText" (input)="onSearchTextChanged()" >
     <button [ngClass]="{'btn':true, 'btn-search':searchText, 'btn-search-disabled':!searchText}" >Search</button>
 
 </div>

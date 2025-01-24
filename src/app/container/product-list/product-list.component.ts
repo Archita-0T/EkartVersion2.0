@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -604,6 +604,8 @@ export class ProductListComponent {
   totalProductCount=this.products.length;
   inStockCount=this.products.filter(p=>p.is_in_inventory===true).length;
   outStockCount=this.products.filter(p=>p.is_in_inventory===false).length;
+@Input()
+  searchText:string='';
   selectedFilterRadioButton:string="all";
   onFilterChanged(value:string){
 this.selectedFilterRadioButton=value;
