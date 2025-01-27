@@ -1,14 +1,15 @@
 import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Product } from 'src/app/Models/Product';
+
 
 @Component({
   selector: 'app-product-list',
-  // imports: [CommonModule],
+  
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent {
-  // prod:any;
+  selectedProduct:Product;
   products = [
     {
       id: 1,
