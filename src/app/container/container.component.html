@@ -1,7 +1,7 @@
 <div class="ekart--product--container">
     <app-search (searchTextChanged)="setSearchText($event)"></app-search>
     <app-product-list [searchText]="searchText" #productListComponent></app-product-list>
-    <app-product-detail *ngIf="productListComponent.selectedProduct"></app-product-detail>
+    <app-product-detail *ngIf="productListComponent.selectedProduct" [productListComp]="productListComponent"></app-product-detail>
     <!-- <img [src]="product.pImage" alt="iPhone image">
 <p>Name: {{product.name}}</p> 
 <p>Price: {{'$' + product.price}}</p>
